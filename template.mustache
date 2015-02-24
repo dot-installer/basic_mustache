@@ -1,9 +1,6 @@
-{{! comment }}
-- {{title}}
+{{#showScore}}
 - {{score}}
-{{=<% %>=}}
-- <% html %>
-- <%& html %>
-<%={{ }}=%>
-- {{{html}}}
-- {{&html}}
+{{/showScore}}
+{{^showScore}}
+- score not available
+{{/showScore}}
